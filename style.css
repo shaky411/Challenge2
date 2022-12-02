@@ -66,8 +66,11 @@ nav a:hover {
   opacity: 0.5;
 }
 
-.page-section {
-  background-color: aquamarine;
+.page-section-about {
+  background-color: rgb(177, 177, 177);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 section {
