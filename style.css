@@ -23,10 +23,12 @@ p {
   margin: 0;
 }
 
+
+/* Main - contains pages sections */
 .container {
   display: grid;
   grid-template-columns: 25% 75%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   gap: 20px;
   padding: 20px;
 }
@@ -45,6 +47,12 @@ header h1 {
   padding: 0px 10px;
   margin-right: 10px;
   color: white;
+  transition: transform .8s ease-in-out;
+}
+
+header h1:hover {
+  transform: rotate(360deg);
+  border: 3px solid red;
 }
 
 header h2 {
@@ -55,7 +63,7 @@ header h2 {
 nav a {
   color: white;
   margin: 10px;
-  background-color: green;
+  border: 2px solid white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -63,7 +71,12 @@ nav a {
 }
 
 nav a:hover {
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  border: 2px solid red;
+}
+
+.hero-banner h2 {
+  padding: 20px;
 }
 
 .page-section-about {
@@ -73,8 +86,12 @@ nav a:hover {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-section {
+.section1 {
   background-color: blueviolet;
+}
+
+.section2 {
+  background-color: bisque;
 }
 
 footer {
@@ -85,4 +102,28 @@ footer {
 img {
   width: 100px;
   border-radius: 50%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  font-size: 18px;
+}
+
+.section1 {
+  padding: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
