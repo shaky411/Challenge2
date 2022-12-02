@@ -3,10 +3,11 @@
 }
 
 body {
-  margin: 0;
+  margin: 50px 50px;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  background-color: beige;
 }
 
 h1,
@@ -20,4 +21,47 @@ h6 {
 
 p {
   margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  border: 2px solid black;
+  gap: 20px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  border: 3px solid rgb(255, 255, 255);
+  padding: 0px 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+header h2 {
+  font-size: 30px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  background-color: green;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+
+}
+
+nav a:hover {
+  opacity: 0.5;
 }
