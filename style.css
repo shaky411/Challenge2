@@ -65,3 +65,21 @@ nav a {
 nav a:hover {
   opacity: 0.5;
 }
+
+.page-section {
+  background-color: aquamarine;
+}
+
+section {
+  background-color: blueviolet;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  border-radius: 50%;
+}
