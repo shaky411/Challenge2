@@ -33,6 +33,8 @@ p {
   padding: 20px;
 }
 
+
+/* Page header and links */
 header {
   display: flex;
   justify-content: space-between;
@@ -67,41 +69,60 @@ nav a {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-
 }
 
 nav a:hover {
   /* opacity: 0.5; */
-  border: 2px solid red;
+  border: none;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
 }
 
-.hero-banner h2 {
+
+
+/* Hero banner and h2 element */
+.hero-banner {
+  max-width: 100%;
+  height: 300px;
+  background-size:cover;
+  background-image: url(./images/02-hero-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 55% 55%;
   padding: 20px;
 }
 
-.page-section-about {
-  background-color: rgb(177, 177, 177);
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-}
+
+
+
+
+
+/* Page Sections */
+
 
 .section1 {
-  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.nested-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.nested-container img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .section2 {
   background-color: bisque;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-}
-
-img {
-  width: 100px;
-  border-radius: 50%;
 }
 
 #about {
@@ -109,18 +130,28 @@ img {
   flex-direction: column;
 }
 
+
+/* About section */
+.page-section-about {
+  background-color: #d2d2a9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+
 footer {
+  padding: 20px;
+  text-align: center;
   font-size: 18px;
 }
 
-.section1 {
-  padding: 20px;
-}
-
-
-
-
-
+/* media queries */
 
 @media (max-width: 700px) {
   .container {
