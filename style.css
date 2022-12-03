@@ -74,8 +74,8 @@ nav a {
 nav a:hover {
   /* opacity: 0.5; */
   border: none;
-  border-left: 2px solid red;
-  border-right: 2px solid red;
+  border-left: 2px solid greenyellow;
+  border-right: 2px solid greenyellow;
 }
 
 
@@ -175,17 +175,23 @@ nav a:hover {
 .page-section-contact {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #ffffff;
+  background-color: #173459;
+  color: #ffffff;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .page-section-contact img {
   width: 50px;
   margin: 5px;
   border-radius: 5px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-section-contact img:hover {
+  border: 2px solid greenyellow;
 }
 
 .page-section-contact a {
