@@ -134,7 +134,7 @@ nav a:hover {
 .nested-container img {
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section2 {
@@ -173,10 +173,23 @@ nav a:hover {
 }
 
 .page-section-contact {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: #ffffff;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-section-contact img {
+  width: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-section-contact a {
+  text-decoration: none;
 }
 
 .profile-pic img {
@@ -202,7 +215,7 @@ footer {
   }
 
   .nested-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
 }
