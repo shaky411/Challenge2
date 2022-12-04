@@ -128,7 +128,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 30px;
+  gap: 20px;
 }
 
 .nested-container img {
@@ -138,10 +138,81 @@ nav a:hover {
 }
 
 .section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 20px;
   background-color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 55px;
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  grid-template-areas:
+  "top-row top-row"
+  
+  ;
+}
+
+.top-row {
+  background-image: url(./images/02-portfolio-1.jpg);
+  /* background-size: 100% 100%; */
+  /* background-position:center; */
+  /* width: 100%; */
+  /* max-height: 100%; */
+  background-size: cover;
+  background-repeat: no repeat;
+  background-position: 55% 55%;
+  opacity: 0.5;
+}
+
+.top-row:hover {
+  opacity: 1;
+}
+
+.top-row {
+  grid-area: top-row;
+}
+
+.top-row h4 {
+  display: inline;
+  color: white;
+  background-color: black;
+  font-size: 40px;
+  position: absolute;
+  bottom: -370px;
+  padding: 10px;
+  border: 8px solid white;
+}
+
+
+
+.second-row1 {
+  background-image: url(./images/02-portfolio-2.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  background-position: 55% 55%;
+  opacity: 0.5;
+}
+
+.second-row1:hover {
+  opacity: 1;
+}
+
+.second-row2 {
+  background-image: url(./images/bristol.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  background-position: 55% 55%;
+  opacity: 0.5;
+}
+
+.second-row2:hover {
+  opacity: 1;
+}
+
+
+
+.section2 img {
+  
 }
 
 .section3 {
@@ -165,11 +236,29 @@ nav a:hover {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
+.profile-pic img {
+  width: 100px;
+  border-radius: 50%;
+}
+
 .page-section-work {
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* background-color: #ffffff; */
+  border-right: 5px solid #173459;
+  border-right-style: dotted;
+  margin-top: 10px;
+  /* opacity: 0.5; */
+  /* border-radius: 15px; */
+  /* padding: 20px; */
+  /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.page-section-work h2 {
+  padding-right: 20px;
+  font-size: 40px;
+  color:#173459;
 }
 
 .page-section-contact {
@@ -197,12 +286,6 @@ nav a:hover {
 .page-section-contact a {
   text-decoration: none;
 }
-
-.profile-pic img {
-  width: 100px;
-  border-radius: 50%;
-}
-
 
 footer {
   padding: 20px;
