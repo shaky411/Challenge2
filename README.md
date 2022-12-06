@@ -30,9 +30,16 @@ N/A
 
 ## Usage
 
-This is a demo website that's been used as part of challenge 1 of the Front End Web Developer Bootcamp. An example of the site can be seen in the following link:
+Please click on the following link to see my finished portfolio webpage.
 
-https://user-images.githubusercontent.com/52311541/204058778-d96abd8c-596d-4a99-b8e4-bbe805a9385a.png
+https://shaky411.github.io/Challenge2/
+
+
+## Screenshots
+
+![Alt text](images/Screenshot/Screenshot_1.jpeg)
+
+![Alt text](images/Screenshot/Screenshot_2.png)
 
 ## Credits
 
