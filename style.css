@@ -204,6 +204,7 @@ nav a:hover {
 
 .second-row1:hover {
   opacity: 1;
+  background-size: 1000px;
 }
 
 .second-row2 {
@@ -228,6 +229,7 @@ nav a:hover {
 
 .second-row2:hover {
   opacity: 1;
+  background-size: 1000px;
 }
 
 /* .section3 {
