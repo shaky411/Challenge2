@@ -259,6 +259,11 @@ nav a:hover {
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+.page-section-about h2 {
+  color: var(--accent-color);
 }
 
 .profile-pic img {
