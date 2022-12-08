@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --accent-color: #173459;
+}
+
 body {
   margin: 50px 50px;
   padding: 0;
@@ -175,7 +179,7 @@ nav a:hover {
 .top-row h4 {
   display: inline;
   color: white;
-  background-color: #173459;
+  background-color: var(--accent-color);
   font-size: 30px;
   position: absolute;
   bottom: -300px;
@@ -194,7 +198,7 @@ nav a:hover {
 .second-row1 h4 {
   display: inline;
   color: white;
-  background-color: #173459;
+  background-color: var(--accent-color);
   font-size: 30px;
   position:absolute;
   top: 1390px;
@@ -219,7 +223,7 @@ nav a:hover {
 .second-row2 h4 {
   display: inline;
   color: white;
-  background-color: #173459;
+  background-color: var(--accent-color);
   font-size: 30px;
   position:absolute;
   top: 1390px;
@@ -260,7 +264,7 @@ nav a:hover {
 }
 
 .page-section-about i {
-  border: 2px solid #173459;
+  border: 2px solid var(--accent-color);
   border-radius: 5px;
   color: #173459;
   margin-top: 10px;
@@ -284,7 +288,7 @@ nav a:hover {
   flex-direction: column;
   align-items: flex-end;
   background-color: #ffffff;
-  border-right: 5px solid #173459;
+  border-right: 5px solid var(--accent-color);
   border-right-style: dotted;
   margin-top: 10px;
   /* opacity: 0.5; */
@@ -299,10 +303,12 @@ nav a:hover {
   color:#173459;
 }
 
+
+/* Contact section */
 .page-section-contact {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #173459;
+  background-color: var(--accent-color);
   color: #ffffff;
   border-radius: 15px;
   padding: 20px;
