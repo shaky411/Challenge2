@@ -7,6 +7,7 @@
 :root {
   --accent-color: #173459;
   --navbar-text-color: white;
+  --hover-color: greenyellow;
 }
 
 body {
@@ -81,8 +82,8 @@ nav a {
 nav a:hover {
   /* opacity: 0.5; */
   border: none;
-  border-left: 2px solid greenyellow;
-  border-right: 2px solid greenyellow;
+  border-left: 2px solid var(--hover-color);
+  border-right: 2px solid var(--hover-color);
 }
 
 
@@ -129,6 +130,10 @@ nav a:hover {
   color: rgb(175, 175, 175);
   font-size: 15px;
   font-weight: lighter;
+}
+
+.section1 p {
+  margin-right: 20px;
 }
 
 .nested-container {
